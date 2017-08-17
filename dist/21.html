@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name='apple-touch-fullscreen' content='yes'>
+		<meta name="full-screen" content="no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="address=no" />
+		<link rel="stylesheet" href="asset/css/reset.css" />
+		<link rel="stylesheet" href="asset/css/style.css" />
+		<script src="asset/js/mr-app.js"></script>
+		<script src="asset/js/js.js"></script>
+		<!--<script src="asset/plug/Calendar.js"></script>-->
+	</head>
+
+	<body>
+		<div class="homeMadel">
+			<div class="jubaoModal">
+				<h2 class="jbTitle">万达集团审计中心举报联系方式  <img class="cancelIcon" src="asset/img/ps5/cancelIcon.png" alt=""></h2>
+				<div class="jbContent">
+					<ul>
+						<li>
+							<p class="tel">电话：010-85853844 </p>
+							<p class="time">周一至周五 08:30-17:30 </p>
+						</li>
+						<li>
+							<p class="mail">邮箱： sjzx@wanda.cn </p>
+						</li>
+						<li><p class="wechat">微信：万达审计监督</p></li>
+					</ul>
+					<img class="erweima" src="asset/img/ps5/jubaoerweima.png" alt="">
+				</div>
+			</div>
+			<div class="zixunModal">
+				<h2 class="jbTitle">选择咨询方式  <img class="cancelIcon" src="asset/img/ps5/cancelIcon.png" alt=""></h2>
+				<div class="jbContent">
+					<ul>
+						
+						<li>
+							<p class="mail">QQ客服：800063332 </p>
+						</li>
+						<li><p class="wechat">电话：010-85588111</p></li>
+						<li>
+							<p class="wechat" style="font-size: 0.24rem;color: #e4e4e4">周一至周五 08:30-17:30 </p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="homeHeader">
+			<img class="avatar" src="asset/img/ps5/avatar.png" alt=""><span class="username">张峰</span>
+			
+			<img class="homeLogo" src="asset/img/ps5/wandaLogo.png" alt="">
+			<img class="searchIcon" src="asset/img/ps5/fangdajing.png" alt="">
+		</div>
+		<div class="homeContent">
+			<ul class="navList">
+				<li><img src="asset/img/ps5/1.png" alt=""><p class="active" >首页</p></li>
+				<li><img src="asset/img/ps5/2.png" alt=""><p>供方报名</p></li>
+				<li><img src="asset/img/ps5/3.png" alt=""><p>招采计划</p></li>
+				<li><img src="asset/img/ps5/4.png" alt=""><p>信息公告</p></li>
+			</ul>
+			<div class="noticeInfo">
+				<h2 class="infotitle">信息公告</h2><p>2月10日 万达集团品牌库供方变更信息须知</p>
+			</div>
+			<div class="line"></div>
+			<div class="newsList">
+				<ul class="newsListUl">
+					<li>
+						<a href="#">
+							<p>扬州邗江万达广场规划路美陈设计及制 作潜在供方报名</p>
+							<span>2017-06-21</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>S3地块幕墙、门窗工程招标公告</p>
+							<span>2017-06-21</span>
+						</a>
+						
+					</li>
+					<li>
+						<a href="#">
+							<p>北海项目S1地块建筑方案设计招标公告</p>
+							<span>2017-06-21</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>生态公园景观工程施工单位招标公告</p>
+							<span>2017-06-21</span>
+						</a>
+						
+					</li>
+					<li>
+						<a href="#">
+							<p>生态公园景观工程施工单位招标公告</p>
+							<span>2017-06-21</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>生态公园景观工程施工单位招标公告</p>
+							<span>2017-06-21</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p>生态公园景观工程施工单位招标公告</p>
+							<span>2017-06-21</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="line line20"></div>
+			<div class="cateList">
+				<ul class="cateListUl">
+					<li><img class="tousu" src="asset/img/ps5/tousu.png" alt=""><p>投诉与建议</p></li>
+					<li><img class="jubao" src="asset/img/ps5/jubao.png" alt=""><p>投诉与建议</p></li>
+					<li><img class="zixun" src="asset/img/ps5/zixun.png" alt=""><p>投诉与建议</p></li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			$('.tousu').on('click',function(){
+				$('.homeMadel').show();
+				$('.jubaoModal').show();
+			})
+			$('.cancelIcon').on('click',function(){
+				$('.homeMadel').hide();
+				$('.jubaoModal').hide();
+			})
+			$('.zixun').on('click',function(){
+				$('.homeMadel').show();
+				$('.zixunModal').show();
+			})
+			$('.cancelIcon').on('click',function(){
+				$('.homeMadel').hide();
+				$('.zixunModal').hide();
+			})
+		</script>
+	</body>
+
+</html>

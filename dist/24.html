@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name='apple-touch-fullscreen' content='yes'>
+		<meta name="full-screen" content="no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="address=no" />
+		<link rel="stylesheet" href="asset/css/reset.css" />
+		<link rel="stylesheet" href="asset/css/style.css" />
+		<script src="asset/js/mr-app.js"></script>
+		<script src="asset/js/js.js"></script>
+		<!--<script src="asset/plug/Calendar.js"></script>-->
+	</head>
+
+	<body>
+		<div class="homeHeader">
+			<img class="avatar" src="asset/img/ps5/avatar.png" alt=""><span class="username">张峰</span>
+			
+			<img class="homeLogo" src="asset/img/ps5/wandaLogo.png" alt="">
+			<img class="searchIcon" src="asset/img/ps5/fangdajing.png" alt="">
+		</div>
+		<div class="homeContent">
+			<ul class="navList">
+				<li><img src="asset/img/ps5/1.png" alt=""><p >首页</p></li>
+				<li><img src="asset/img/ps5/2.png" alt=""><p class="active" >供方报名</p></li>
+				<li><img src="asset/img/ps5/3.png" alt=""><p>招采计划</p></li>
+				<li><img src="asset/img/ps5/4.png" alt=""><p>信息公告</p></li>
+			</ul>
+			<div class="noticeInfo">
+				<h2 class="infotitle">信息公告</h2><p>2月10日 万达集团品牌库供方变更信息须知</p>
+			</div>
+			<div class="line"></div>
+			<div class="newsList">
+				<div class="gflistBanner">
+					<ul class="GfnewsListUl">
+						<li><p class="active">工程类</p></li>
+						<li><p class="">材料设备类</p></li>
+						<li><p class="">材料设备类</p></li>
+						<li><p class="">材料设备类</p></li>
+						<li><p class="">材料设备类</p></li>
+					</ul>
+				</div>
+				<div class="listNameBanner">
+					<div class="listName">
+						<ul class="firUl">
+							<li class="active">工程施工类</li>
+							<li>工程施工类</li>
+							<li>工程施工类</li>
+						</ul>
+						<div class="seListName">
+							<ul class="seUl">
+								<a href="#"><li class="active">瑞华酒店公共区</li></a>
+								<a href="#"><li>瑞华酒店公共区</li></a>
+								<a href="#"><li>瑞华酒店公共区</li></a>
+								<a href="#"><li>瑞华酒店公共区</li></a>
+								<a href="#"><li>瑞华酒店公共区</li></a>
+								<a href="#"><li>瑞华酒店公共区</li></a>
+								<a href="#"><li>瑞华酒店公共区</li></a>
+								<a href="#"><li>瑞华酒店公共区</li></a>
+								<a href="#"><li>瑞华酒店公共区</li></a>
+								<a href="#"><li>瑞华酒店公共区</li></a>
+								<a href="#"><li>瑞华酒店公共区</li></a>
+								<a href="#"><li>瑞华酒店公共区</li></a>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+		var liLength=$('.GfnewsListUl li').length*1.8
+		console.log(liLength)
+			$('.GfnewsListUl').width(liLength+'rem')
+			$('.GfnewsListUl  p').on('click',function(){
+				console.log($(this))
+				$('.GfnewsListUl p').removeClass('active')
+				$(this).addClass('active')
+			})
+
+			$('.firUl li').on('click',function(){
+				$(this).addClass('active').siblings().removeClass('active')
+			})
+			$('.seUl li').on('click',function(){
+				$('.seUl li').removeClass('active')
+				$(this).addClass('active')
+			})
+			
+		</script>
+	</body>
+
+</html>

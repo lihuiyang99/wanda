@@ -1,0 +1,1 @@
+{"version":3,"sources":["js1.js"],"names":[],"mappings":"AAAA;AACA;AACA","file":"../js/js.js","sourcesContent":["$(function() {\r\n    $('html body').css('opacity',1)\r\n})"]}

@@ -1,0 +1,24 @@
+{
+  "author": "zhanghui",
+  "name": "moban",
+  "homepage": "http://www.maxrocky.com",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">= 0.8.4"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-clean": "*",
+    "gulp-concat": "*",
+    "gulp-connect": "*",
+    "gulp-csso": "*",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-jshint": "*",
+    "gulp-less": "*",
+    "gulp-refresh": "^1.1.0",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "imagemin-pngcrush": "^5.0.0"
+  }
+}

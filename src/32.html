@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html >
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name='apple-touch-fullscreen' content='yes'>
+		<meta name="full-screen" content="no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="address=no" />
+		<link rel="stylesheet" href="asset/css/reset.css" />
+		<link rel="stylesheet" href="asset/css/style.css" />
+		<script src="asset/js/mr-app.js"></script>
+		<script src="asset/js/js.js"></script>
+		<!--<script src="asset/plug/Calendar.js"></script>-->
+	</head>
+
+	<body >
+		<div class="homeHeader">
+			<img class="goback" src="asset/img/ps5/goback.png" alt="">
+			<p class="title">我的消息</p>
+		</div>
+		<div class="myBid">
+			<ul class="newsList">
+				<li><span class="active">全部</span></li>
+				<li><span class="">代办</span></li>
+				<li><span class="">已办</span></li>
+				<li><span class="">公告</span></li>
+				<li><span class="">商机</span></li>
+			</ul>
+			<div class="myNews"  style="display: block;">
+				<ul class="showList">
+					<li>
+						<p class="title">【回函】<span>08-28 17:31</span></p>
+						<p class="detail">芜湖镜湖万达广场装修</p>
+					 </li>
+					<li>
+						<p class="title">【回函】<span>08-28 17:31</span></p>
+						<p class="detail">芜湖镜湖万达广场装修芜湖镜湖万达广场装修</p>
+					 </li>
+					 <li>
+						<p class="title">【回函】<span>08-28 17:31</span></p>
+						<p class="detail">芜湖镜湖万达广场装修</p>
+					 </li>
+					 
+				</ul>
+			</div>
+			<div class="myNews" >
+				<ul class="showList">
+					<li>
+						<p class="title">【回函】<span>08-28 17:31</span></p>
+						<p class="detail">芜湖镜湖万达广场装修芜湖镜湖万达广场装修</p>
+					 </li>
+					<li>
+						<p class="title">【回函】<span>08-28 17:31</span></p>
+						<p class="detail">芜湖镜湖万达广场装修</p>
+					 </li>
+					 <li>
+						<p class="title">【回函】<span>08-28 17:31</span></p>
+						<p class="detail">芜湖镜湖万达广场装修</p>
+					 </li>
+					 
+				</ul>
+			</div>
+			<div class="myNews" >
+				<ul class="showList">
+					<li>
+						<p class="title">【回函】<span>08-28 17:31</span></p>
+						<p class="detail">芜湖镜湖万达广场装修</p>
+					 </li>
+					<li>
+						<p class="title">【回函】<span>08-28 17:31</span></p>
+						<p class="detail">芜湖镜湖万达广场装修</p>
+					 </li>
+					 <li>
+						<p class="title">【回函】<span>08-28 17:31</span></p>
+						<p class="detail">芜湖镜湖万达广场装修芜湖镜湖万达广场装修</p>
+					 </li>
+					 
+				</ul>
+			</div>
+			<div class="myNews" >
+				<ul class="showList">
+					<li>
+						<p class="title">【回函】<span>08-28 17:31</span></p>
+						<p class="detail">芜湖镜湖万达广场装修</p>
+					 </li>
+					<li>
+						<p class="title">【回函】<span>08-28 17:31</span></p>
+						<p class="detail">芜湖镜湖万达广场装修芜湖镜湖万达广场装修</p>
+					 </li>
+					 <li>
+						<p class="title">【回函】<span>08-28 17:31</span></p>
+						<p class="detail">芜湖镜湖万达广场装修芜湖镜湖万达广场装修</p>
+					 </li>
+					 
+				</ul>
+			</div>
+			<div class="myNews" >
+				<ul class="showList">
+					<li>
+						<p class="title">【商机】<span>08-28 17:31</span></p>
+						<p class="detail">芜湖镜湖万达广场装修</p>
+					 </li>
+					<li>
+						<p class="title">【商机】<span>08-28 17:31</span></p>
+						<p class="detail">芜湖镜湖万达广场装修芜湖镜湖万达广场装修</p>
+					 </li>
+					 <li>
+						<p class="title">【商机】<span>08-28 17:31</span></p>
+						<p class="detail">芜湖镜湖万达广场装修芜湖镜湖万达广场装修</p>
+					 </li>
+					 
+				</ul>
+			</div>
+		</div>
+		<script>
+			$('.newsList span').on('click',function(){
+				$('.newsList span').removeClass('active')
+				var index=$('.newsList span').index(this);
+				$(this).addClass('active')
+				$('.myNews').hide()
+				$('.myNews').eq(index).show();
+			})
+		</script>
+	</body>
+
+</html>

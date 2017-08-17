@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html >
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name='apple-touch-fullscreen' content='yes'>
+		<meta name="full-screen" content="no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="address=no" />
+		<link rel="stylesheet" href="asset/css/reset.css" />
+		<link rel="stylesheet" href="asset/css/style.css" />
+		<script src="asset/js/mr-app.js"></script>
+		<script src="asset/js/js.js"></script>
+		<!--<script src="asset/plug/Calendar.js"></script>-->
+	</head>
+
+	<body >
+		<div class="homeHeader">
+			<img class="goback" src="asset/img/ps5/goback.png" alt="">
+			<p class="title">北京侨信装饰工程有限公司</p>
+		</div>
+		<div class="ComplaintsASuggestions">
+			<div class="header">
+				<ul class="headerList">
+					<li><i></i><span class="active">投诉</span></li>
+					<li><span class="fl">建议</span></li>
+				</ul>
+				<div class="formBanner" style="display: block;">
+					<div class="Complaints">
+						<h4>诉方信息</h4>
+						<ul class="ComplaintsList">
+							<li><span class="dot"></span>
+								<div class="content">
+								<span>公司：</span><input type="text" class="contentInp" placeholder="请输入公司名称">
+								</div>
+							</li>
+							<li><span class="dot"></span>
+								<div class="content">
+								<span>社会信用代码：</span><input type="text" class="contentInp" placeholder="请输入社会信用代码">
+								</div>
+							</li>
+							<li><span class="dot"></span>
+								<div class="content">
+								<span>联系人：</span><input type="text" class="contentInp" placeholder="请输入真实姓名">
+								</div>
+							</li>
+							<li><span class="dot"></span>
+								<div class="content">
+								<span>联系方式：</span><input type="text" class="contentInp" placeholder="请输入有效联系方式">
+								</div>
+							</li>
+							<li><span class="dot"></span>
+								<div class="content">
+								<span>邮箱：</span><input type="text" class="contentInp" placeholder="请输入邮箱">
+								</div>
+							</li>
+							<li class="displayN showHide"><span class="dot"></span>
+								<div class="content">
+								<span>传真：</span><input type="text" class="contentInp" placeholder="请输入传真">
+								</div>
+							</li>
+							<li class="displayN showHide"><span class="dot"></span>
+								<div class="content">
+								<span>主管领导：</span><input type="text" class="contentInp" placeholder="请输入主管领导">
+								</div>
+							</li>
+							<li class="displayN showHide"><span class="dot"></span>
+								<div class="content">
+								<span>电话：</span><input type="text" class="contentInp" placeholder="请输入电话">
+								</div>
+							</li>
+						</ul>
+						<p class="PutAway"><span>完善信息</span><i class="down"></i></p>
+					</div>
+					<div class="Complaints">
+						<h4>诉方信息</h4>
+						<ul class="ComplaintsList">
+							<li><span class="dot"></span>
+								<div class="content">
+								<span>投诉类型：</span><input type="text" class="contentInp" placeholder="请选择投诉类型">
+								</div>
+							</li>
+							<li><span class="dot"></span>
+								<div class="content">
+								<span>业务分类：</span><input type="text" class="contentInp" placeholder="请选择业务分类">
+								</div>
+							</li>
+							<li><span class="dot"></span>
+								<div class="content">
+								<span>项目名称：</span><input type="text" class="contentInp" placeholder="请输入项目名称">
+								</div>
+							</li>
+							<li  class="displayN"><span class="dot"></span>
+								<div class="content">
+								<span>被投诉方：</span><input type="text" class="contentInp" placeholder="请输入被投诉方">
+								</div>
+							</li>
+							<li  class="displayN"><span class="dot"></span>
+								<div class="content">
+								<span>合同名称：</span><input type="text" class="contentInp" placeholder="请输入合同名称">
+								</div>
+							</li>
+						</ul>
+						<p class="PutAway"><span>完善信息</span><i class="down"></i></p>
+					</div>
+					<div class="Complaints padding3">
+						<h4>投诉事件说明</h4>
+						<div class="areaTitle">
+							<p>添加描述</p>
+							<textarea name="" id="" cols="30" rows="10"></textarea>
+						</div>
+						<div class="areaTitle">
+							<p style="height: 0.7rem">上传照片</p>
+							<span class="uploadT">如需上传影像请通过PC端方式上传https://vendor.wanda.cn </span>
+							<div class="imageBanner">
+								<div class="imgbox" id="imgbox">
+									
+								</div>
+								<div class="uploadbox">
+									<input onchange="PreviewImage(this)" type="file" class="upload" accept=".png,.jpg,.jpeg">
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="Complaints">
+						<div class="upsubmit">
+							<div class="left"><img class="active"  src="asset/img/ps5/niming.png" alt="">匿名</div>
+							<div class="right">提交</div>
+						</div>
+					</div>
+				</div>
+				<div class="formBanner" >
+					<div class="Complaints">
+						<h4>建议信息</h4>
+						<ul class="ComplaintsList">
+							<li><span class="dot"></span>
+								<div class="content">
+								<span>公司：</span><input type="text" class="contentInp" placeholder="请输入公司名称">
+								</div>
+							</li>
+							<li><span class="dot"></span>
+								<div class="content">
+								<span>社会信用代码：</span><input type="text" class="contentInp" placeholder="请输入社会信用代码">
+								</div>
+							</li>
+							<li><span class="dot"></span>
+								<div class="content">
+								<span>联系人：</span><input type="text" class="contentInp" placeholder="请输入真实姓名">
+								</div>
+							</li>
+							<li><span class="dot"></span>
+								<div class="content">
+								<span>联系方式：</span><input type="text" class="contentInp" placeholder="请输入有效联系方式">
+								</div>
+							</li>
+							<li><span class="dot"></span>
+								<div class="content">
+								<span>邮箱：</span><input type="text" class="contentInp" placeholder="请输入邮箱">
+								</div>
+							</li>
+							<li class="displayN showHide"><span class="dot"></span>
+								<div class="content">
+								<span>传真：</span><input type="text" class="contentInp" placeholder="请输入传真">
+								</div>
+							</li>
+							<li class="displayN showHide"><span class="dot"></span>
+								<div class="content">
+								<span>主管领导：</span><input type="text" class="contentInp" placeholder="请输入主管领导">
+								</div>
+							</li>
+							<li class="displayN showHide"><span class="dot"></span>
+								<div class="content">
+								<span>电话：</span><input type="text" class="contentInp" placeholder="请输入电话">
+								</div>
+							</li>
+						</ul>
+						<p class="PutAway"><span>完善信息</span><i class="down"></i></p>
+					</div>
+					<div class="Complaints">
+						<h4>建议信息</h4>
+						<ul class="ComplaintsList">
+							<li><span class="dot"></span>
+								<div class="content">
+								<span>投诉类型：</span><input type="text" class="contentInp" placeholder="请选择投诉类型">
+								</div>
+							</li>
+							<li><span class="dot"></span>
+								<div class="content">
+								<span>业务分类：</span><input type="text" class="contentInp" placeholder="请选择业务分类">
+								</div>
+							</li>
+							<li><span class="dot"></span>
+								<div class="content">
+								<span>项目名称：</span><input type="text" class="contentInp" placeholder="请输入项目名称">
+								</div>
+							</li>
+							<li  class="displayN"><span class="dot"></span>
+								<div class="content">
+								<span>被投诉方：</span><input type="text" class="contentInp" placeholder="请输入被投诉方">
+								</div>
+							</li>
+							<li  class="displayN"><span class="dot"></span>
+								<div class="content">
+								<span>合同名称：</span><input type="text" class="contentInp" placeholder="请输入合同名称">
+								</div>
+							</li>
+						</ul>
+						<p class="PutAway"><span>完善信息</span><i class="down"></i></p>
+					</div>
+					<div class="Complaints padding3">
+						<h4>建议事件说明</h4>
+						<div class="areaTitle">
+							<p>添加描述</p>
+							<textarea name="" id="" cols="30" rows="10"></textarea>
+						</div>
+						<div class="areaTitle">
+							<p style="height: 0.7rem">上传照片</p>
+							<span class="uploadT">如需上传影像请通过PC端方式上传https://vendor.wanda.cn </span>
+							<div class="imageBanner">
+								<div class="imgbox" id="imgbox">
+									
+								</div>
+								<div class="uploadbox">
+									<input  type="file" class="upload" accept=".png,.jpg,.jpeg">
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="Complaints">
+						<div class="upsubmit">
+							<div class="left"><img class="active"  src="asset/img/ps5/niming.png" alt="">匿名</div>
+							<div class="right">提交</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<script>
+			$('.headerList span').on('click',function(){
+				$('.headerList span').removeClass('active');
+				var index=$('.headerList span').index();
+				$('.formBanner').hide();
+				$('.formBanner').eq(index).show();
+				$(this).addClass('active')
+			})
+			$('.PutAway').on('click',function(){
+				var status=$(this).prev('.ComplaintsList').find('.displayN').css('display')
+				console.log(status)
+				if(status!='none'){
+					$(this).prev('.ComplaintsList').find('.displayN').hide()
+					$(this).find('span').html('完善信息')
+					$(this).find('i').removeClass('up').addClass('down')
+				}else{
+					$(this).prev('.ComplaintsList').find('.displayN').show()
+					$(this).find('span').html('收起')
+					$(this).find('i').addClass('up').removeClass('down')
+				}
+			})
+				var imgArr=[];
+			/*function PreviewImage(imgFile)
+			{
+
+			    var filextension=imgFile.value.substring(imgFile.value.lastIndexOf("."),imgFile.value.length);
+			    filextension=filextension.toLowerCase();
+
+			    console.log(filextension)
+			    if ((filextension!='.jpg')&&(filextension!='.gif')&&(filextension!='.jpeg')&&(filextension!='.png')&&(filextension!='.bmp'))
+			    {
+			    alert("对不起，系统仅支持标准格式的照片，请您调整格式后重新上传，谢谢 !");
+			    
+			    }
+			    else
+			    {
+				    path=window.URL.createObjectURL(imgFile.files[0]);
+				    imgArr.push(path)
+				    console.log(imgArr)
+				    str=''
+				    str='<img src="'+path+'" alt="">';
+				    $('.imgbox').append(str)
+			    
+			}
+			$('.imgbox img').on('click',function(){
+				$(this).remove();
+			})
+		}*/
+		$('.upsubmit .left').on('click',function(){
+			
+			if($(this).find('img').hasClass('active')){
+				$(this).find('img').removeClass('active')
+				$(this).find('img').attr('src','asset/img/ps5/circleIcon.png')
+			}else{
+				$(this).find('img').addClass('active')
+				$(this).find('img').attr('src','asset/img/ps5/niming.png')
+			}
+		})
+
+		</script>
+	</body>
+
+</html>

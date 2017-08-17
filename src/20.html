@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name='apple-touch-fullscreen' content='yes'>
+		<meta name="full-screen" content="no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="address=no" />
+		<link rel="stylesheet" href="asset/css/reset.css" />
+		<link rel="stylesheet" href="asset/css/style.css" />
+		<script src="asset/js/mr-app.js"></script>
+		<script src="asset/js/js.js"></script>
+		<!--<script src="asset/plug/Calendar.js"></script>-->
+	</head>
+
+	<body style="height: 100%">
+		<div class="loginHeader">
+			<img class="loginLogo" src="asset/img/ps5/logo.png" alt="">
+		</div>
+		<div class="loginCon">
+			<div class="userNameBanner">
+				<i class="phone"></i>
+				<input type="text" placeholder="用户名/手机号">
+			</div>
+			<div class="passWordBanner">
+				<i class="suo"></i>
+				<input class="password" type="password"  placeholder="密码">
+				<i class="yan"></i>
+			</div>
+			<div class="icodeBanner">
+				<div class="icodeInner">
+					<i class="dun"></i>
+					<input class="icode" type="text"  placeholder="请输入验证码">
+				</div>
+				<button class="getCode">获取验证码</button>
+			</div>
+			
+			<button class="login">登录</button>
+			<a href="#"><p class="forgetPassword">忘记密码？</p></a>
+		</div>
+		<p class="copyRight">Powered by 万达集团招采平台</p>
+		<script>
+			$('.yan').on('click',function(){
+				var status=$('.password').attr('type');
+				if(status=='password'){
+					$('.password').attr('type','text');
+				}else{
+					$('.password').attr('type','password');
+				}
+			})
+			$('.getCode').on('click',function(){
+				var time=60;
+				var that=this;
+				$(that).attr('disabled','disabled')
+				var timer=setInterval(function(){
+					time=time-1;
+					console.log(time)
+					$(that).html(time+' s')
+					if(time<0){
+						console.log($(that))
+						$(that).html('重新发送')
+						$(that).attr('disabled',false)
+						clearInterval(timer)
+					}
+					
+				},1000)
+
+				
+			})
+		</script>
+	</body>
+
+</html>

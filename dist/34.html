@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name='apple-touch-fullscreen' content='yes'>
+		<meta name="full-screen" content="no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="address=no" />
+		<link rel="stylesheet" href="asset/css/reset.css" />
+		<link rel="stylesheet" href="asset/css/style.css" />
+		<script src="asset/js/mr-app.js"></script>
+		<script src="asset/js/js.js"></script>
+		<!--<script src="asset/plug/Calendar.js"></script>-->
+	</head>
+
+	<body >
+		<div class="homeHeader">
+			<img class="goback" src="asset/img/ps5/goback.png" alt="">
+			<p class="title">修改账号密码</p>
+		</div>
+		<div class="about">
+			<div class="videoAbout">
+				<a href="#" class=" video-block click-float-video  mt35 js-video-play " data-src="http://image.wanda.cn/uploadfile/video/20170115_gongzuozongjie.mp4">
+					<img src="asset/img/ps5/about1.png">
+					<!-- <b class="mask"></b> -->
+					<s class="play"></s>
+				</a>
+			</div>
+			<div class="aboutCon">
+				<h2 class="title">关于万达招采平台</h2>
+				<p>万达集团招采平台，依托先进的互联网+、大数据技术、物联网技术、移动技术，以“管控和服务”为核心，以打通集团招采业务链为主线，以“建立共赢生态圈，打造智慧招采平台”为目标，对内实现招采业务全程信息化管控，对外实现供方一站式服务。万达集团招采平台包含供方服务、供方管理、招采管理、合同管理、供方评估五大部分，建立全过程线上管控和服务体系，完成对招采业务的全面管理创新，是对传统招采管理的一次重大变革，成功树立行业标</p>
+				<img src="asset/img/ps5/about2.jpg" alt="">
+			</div>
+		</div>
+		<p class="copyRightA">Powered by 万达集团招采平台</p>
+		<div class="float-video">
+				<a href="#">&times;</a>
+				<video width="640" height="320" id="iVideo">
+					<source src="" type="video/mp4"></source>
+				</video>
+			</div>
+		<script>
+			//首页视频弹层播放
+		$(".click-float-video").click(function() {
+			var videoSrc = $(this).data("src");
+			$(".float-video").show();
+			$("#iVideo").attr("src", videoSrc);
+			setTimeout(function() {
+				$("#iVideo").trigger("play");
+			}, 500)
+		});
+		$(".float-video a").click(function() {
+			$(this).parent().hide();
+			$("#iVideo").trigger("pause");
+		})
+		</script>
+	</body>
+
+</html>
