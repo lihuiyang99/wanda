@@ -15,9 +15,9 @@
 		<link rel="stylesheet" href="asset/css/style.css" />
 		<script src="asset/js/mr-app.js"></script>
 		<script src="asset/js/js.js"></script>
-		<!--<script src="asset/plug/Calendar.js"></script>-->
+		<script src="asset/plug/upload/zepto.min.js"></script>
+		<script src="asset/plug/upload/upload.js"></script>
 	</head>
-
 	<body >
 		<div class="homeHeader">
 			<img class="goback" src="asset/img/ps5/goback.png" alt="">
@@ -31,7 +31,7 @@
 				</ul>
 				<div class="formBanner" style="display: block;">
 					<div class="Complaints">
-						<h4>诉方信息</h4>
+						<h4>诉方信息  <p class="PutAway"><span>完善信息</span><i class="down"></i></p></h4>
 						<ul class="ComplaintsList">
 							<li><span class="dot"></span>
 								<div class="content">
@@ -58,35 +58,45 @@
 								<span>邮箱：</span><input type="text" class="contentInp" placeholder="请输入邮箱">
 								</div>
 							</li>
-							<li class="displayN showHide"><span class="dot"></span>
+							<li class="displayN showHide"><span class="dotNone"></span>
 								<div class="content">
 								<span>传真：</span><input type="text" class="contentInp" placeholder="请输入传真">
 								</div>
 							</li>
-							<li class="displayN showHide"><span class="dot"></span>
+							<li class="displayN showHide"><span class="dotNone"></span>
 								<div class="content">
 								<span>主管领导：</span><input type="text" class="contentInp" placeholder="请输入主管领导">
 								</div>
 							</li>
-							<li class="displayN showHide"><span class="dot"></span>
+							<li class="displayN showHide"><span class="dotNone"></span>
 								<div class="content">
 								<span>电话：</span><input type="text" class="contentInp" placeholder="请输入电话">
 								</div>
 							</li>
 						</ul>
-						<p class="PutAway"><span>完善信息</span><i class="down"></i></p>
+						
 					</div>
 					<div class="Complaints">
-						<h4>诉方信息</h4>
+						<h4>诉方信息 <p class="PutAway"><span>完善信息</span><i class="down"></i></p></h4>
 						<ul class="ComplaintsList">
 							<li><span class="dot"></span>
 								<div class="content">
-								<span>投诉类型：</span><input type="text" class="contentInp" placeholder="请选择投诉类型">
+								<span>投诉类型：</span>
+								<select  class="contentSel" dir="rtl" >
+								    <option>请输入投诉类型</option>    
+								    <option>投诉类型</option>
+								    <option>投诉类型</option>
+								</select>
 								</div>
 							</li>
 							<li><span class="dot"></span>
 								<div class="content">
-								<span>业务分类：</span><input type="text" class="contentInp" placeholder="请选择业务分类">
+								<span>业务分类：</span>
+								<select class="contentSel" dir="rtl" >
+								    <option>请输入业务分类</option>    
+								    <option>业务分类</option>
+								    <option>业务分类</option>
+								</select>
 								</div>
 							</li>
 							<li><span class="dot"></span>
@@ -94,21 +104,21 @@
 								<span>项目名称：</span><input type="text" class="contentInp" placeholder="请输入项目名称">
 								</div>
 							</li>
-							<li  class="displayN"><span class="dot"></span>
+							<li  class="displayN"><span class="dotNone"></span>
 								<div class="content">
 								<span>被投诉方：</span><input type="text" class="contentInp" placeholder="请输入被投诉方">
 								</div>
 							</li>
-							<li  class="displayN"><span class="dot"></span>
+							<li  class="displayN"><span class="dotNone"></span>
 								<div class="content">
 								<span>合同名称：</span><input type="text" class="contentInp" placeholder="请输入合同名称">
 								</div>
 							</li>
 						</ul>
-						<p class="PutAway"><span>完善信息</span><i class="down"></i></p>
+						
 					</div>
 					<div class="Complaints padding3">
-						<h4>投诉事件说明</h4>
+						<h4 >投诉事件说明</h4>
 						<div class="areaTitle">
 							<p>添加描述</p>
 							<textarea name="" id="" cols="30" rows="10"></textarea>
@@ -121,12 +131,13 @@
 									
 								</div>
 								<div class="uploadbox">
-									<input onchange="PreviewImage(this)" type="file" class="upload" accept=".png,.jpg,.jpeg">
+									<input onchange="PreviewImage(this)" type="file" class="upload" accept="image/*" capture="camera">
 								</div>
 								
 							</div>
 						</div>
 					</div>
+
 					<div class="Complaints">
 						<div class="upsubmit">
 							<div class="left"><img class="active"  src="asset/img/ps5/niming.png" alt="">匿名</div>
@@ -136,7 +147,7 @@
 				</div>
 				<div class="formBanner" >
 					<div class="Complaints">
-						<h4>建议信息</h4>
+						<h4>建议信息 <p class="PutAway"><span>完善信息</span><i class="down"></i></p></h4>
 						<ul class="ComplaintsList">
 							<li><span class="dot"></span>
 								<div class="content">
@@ -163,35 +174,45 @@
 								<span>邮箱：</span><input type="text" class="contentInp" placeholder="请输入邮箱">
 								</div>
 							</li>
-							<li class="displayN showHide"><span class="dot"></span>
+							<li class="displayN showHide"><span class="dotNone"></span>
 								<div class="content">
 								<span>传真：</span><input type="text" class="contentInp" placeholder="请输入传真">
 								</div>
 							</li>
-							<li class="displayN showHide"><span class="dot"></span>
+							<li class="displayN showHide"><span class="dotNone"></span>
 								<div class="content">
 								<span>主管领导：</span><input type="text" class="contentInp" placeholder="请输入主管领导">
 								</div>
 							</li>
-							<li class="displayN showHide"><span class="dot"></span>
+							<li class="displayN showHide"><span class="dotNone"></span>
 								<div class="content">
 								<span>电话：</span><input type="text" class="contentInp" placeholder="请输入电话">
 								</div>
 							</li>
 						</ul>
-						<p class="PutAway"><span>完善信息</span><i class="down"></i></p>
+						
 					</div>
 					<div class="Complaints">
-						<h4>建议信息</h4>
+						<h4>建议信息 <p class="PutAway"><span>完善信息</span><i class="down"></i></p></h4>
 						<ul class="ComplaintsList">
 							<li><span class="dot"></span>
 								<div class="content">
-								<span>投诉类型：</span><input type="text" class="contentInp" placeholder="请选择投诉类型">
+								<span>建议类型：</span>
+								<select class="contentSel1" dir="rtl" >
+								    <option>请输入建议类型</option>    
+								    <option>业务分类</option>
+								    <option>业务分类</option>
+								</select>
 								</div>
 							</li>
 							<li><span class="dot"></span>
 								<div class="content">
-								<span>业务分类：</span><input type="text" class="contentInp" placeholder="请选择业务分类">
+								<span>业务分类：</span>
+								<select class="contentSel1" dir="rtl" >
+								    <option>请输入业务分类</option>    
+								    <option>业务分类</option>
+								    <option>业务分类</option>
+								</select>
 								</div>
 							</li>
 							<li><span class="dot"></span>
@@ -199,18 +220,18 @@
 								<span>项目名称：</span><input type="text" class="contentInp" placeholder="请输入项目名称">
 								</div>
 							</li>
-							<li  class="displayN"><span class="dot"></span>
+							<li  class="displayN"><span class="dotNone"></span>
 								<div class="content">
 								<span>被投诉方：</span><input type="text" class="contentInp" placeholder="请输入被投诉方">
 								</div>
 							</li>
-							<li  class="displayN"><span class="dot"></span>
+							<li  class="displayN"><span class="dotNone"></span>
 								<div class="content">
 								<span>合同名称：</span><input type="text" class="contentInp" placeholder="请输入合同名称">
 								</div>
 							</li>
 						</ul>
-						<p class="PutAway"><span>完善信息</span><i class="down"></i></p>
+						
 					</div>
 					<div class="Complaints padding3">
 						<h4>建议事件说明</h4>
@@ -226,7 +247,7 @@
 									
 								</div>
 								<div class="uploadbox">
-									<input  type="file" class="upload" accept=".png,.jpg,.jpeg">
+									<input onchange="PreviewImage(this)" type="file" class="upload" accept="image/*" capture="camera">
 								</div>
 								
 							</div>
@@ -245,51 +266,47 @@
 		<script>
 			$('.headerList span').on('click',function(){
 				$('.headerList span').removeClass('active');
-				var index=$('.headerList span').index();
+				var index=$('.headerList span').index(this);
+				console.log(index)
 				$('.formBanner').hide();
 				$('.formBanner').eq(index).show();
 				$(this).addClass('active')
 			})
 			$('.PutAway').on('click',function(){
-				var status=$(this).prev('.ComplaintsList').find('.displayN').css('display')
+				var status=$(this).parent('h4').next('.ComplaintsList').find('.displayN').css('display')
 				console.log(status)
 				if(status!='none'){
-					$(this).prev('.ComplaintsList').find('.displayN').hide()
+					$(this).parent('h4').next('.ComplaintsList').find('.displayN').hide()
 					$(this).find('span').html('完善信息')
 					$(this).find('i').removeClass('up').addClass('down')
 				}else{
-					$(this).prev('.ComplaintsList').find('.displayN').show()
+					$(this).parent('h4').next('.ComplaintsList').find('.displayN').show()
 					$(this).find('span').html('收起')
 					$(this).find('i').addClass('up').removeClass('down')
 				}
 			})
 				var imgArr=[];
-			/*function PreviewImage(imgFile)
+			function PreviewImage(imgFile)
 			{
-
+				console.log($(imgFile))
 			    var filextension=imgFile.value.substring(imgFile.value.lastIndexOf("."),imgFile.value.length);
 			    filextension=filextension.toLowerCase();
 
 			    console.log(filextension)
-			    if ((filextension!='.jpg')&&(filextension!='.gif')&&(filextension!='.jpeg')&&(filextension!='.png')&&(filextension!='.bmp'))
-			    {
-			    alert("对不起，系统仅支持标准格式的照片，请您调整格式后重新上传，谢谢 !");
-			    
-			    }
-			    else
-			    {
+			   
 				    path=window.URL.createObjectURL(imgFile.files[0]);
 				    imgArr.push(path)
 				    console.log(imgArr)
 				    str=''
 				    str='<img src="'+path+'" alt="">';
-				    $('.imgbox').append(str)
+				    $(imgFile).parent('.uploadbox').prev('.imgbox').append(str)
+				   
 			    
-			}
+			
 			$('.imgbox img').on('click',function(){
 				$(this).remove();
 			})
-		}*/
+		}
 		$('.upsubmit .left').on('click',function(){
 			
 			if($(this).find('img').hasClass('active')){

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+ 
+<html>
+<meta charset="utf-8"/>
+ <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+<head>
+</head>
+ 
+<body>
+ 
+  <div class="camera-area">
+      <form enctype="multipart/form-data" method="post">
+        <input type="file" name="fileToUpload" class="fileToUpload" accept="image/*" capture="camera"/>
+          <div class="upload-progress"><span></span></div>
+        </form>
+      <div class="thumb"></div>
+  </div>
+  <script type="text/javascript" src="zepto.min.js"></script>
+  <script type="text/javascript" src="upload.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $(".camera-area").fileUpload({
+        "url": "savetofile.php",
+        "file": "myFile"
+      });
+    })
+  </script>
+</body>
+ 
+</html>

@@ -2954,12 +2954,39 @@ body {
   box-sizing: border-box;
 }
 .ComplaintsASuggestions .header .Complaints h4 {
+  position: relative;
   font-weight: normal;
   height: 0.6rem;
   line-height: 0.6rem;
   text-align: center;
   font-size: 0.32rem;
   color: #333;
+}
+.ComplaintsASuggestions .header .Complaints h4 .PutAway {
+  position: absolute;
+  right: 0.3rem;
+  top: 0;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: center;
+  font-size: 0.28rem;
+  color: #999999;
+}
+.ComplaintsASuggestions .header .Complaints h4 .PutAway i.up {
+  width: 0.24rem;
+  height: 0.15rem;
+  display: inline-block;
+  margin-left: 0.2rem;
+  background: url(../img/ps5/up.png) no-repeat 100%;
+  background-size: 100%;
+}
+.ComplaintsASuggestions .header .Complaints h4 .PutAway i.down {
+  width: 0.24rem;
+  height: 0.15rem;
+  margin-left: 0.2rem;
+  display: inline-block;
+  background: url(../img/ps5/dropdown.png) no-repeat 100%;
+  background-size: 100%;
 }
 .ComplaintsASuggestions .header .Complaints .areaTitle {
   width: 100%;
@@ -3042,6 +3069,13 @@ body {
   border-radius: 50%;
   background: #ff384b;
 }
+.ComplaintsASuggestions .header .Complaints .ComplaintsList li .dotNone {
+  display: inline-block;
+  height: 0.1rem;
+  width: 0.1rem;
+  margin: 0.4rem 0.1rem;
+  border-radius: 50%;
+}
 .ComplaintsASuggestions .header .Complaints .ComplaintsList li .content {
   display: inline-block;
   width: 7.10rem;
@@ -3064,28 +3098,61 @@ body {
   padding-right: 0.3rem;
   box-sizing: border-box;
 }
-.ComplaintsASuggestions .header .Complaints .PutAway {
+.ComplaintsASuggestions .header .Complaints .ComplaintsList li .content .contentSel {
+  background: url(../img/ps5/rightIcon.png) no-repeat right center;
+  background-size: 0.15rem 0.24rem;
+  float: right;
+  width: 5rem;
   height: 0.6rem;
-  line-height: 0.6rem;
-  text-align: center;
+  margin-top: 0.15rem;
+  text-align: right;
+  color: #333;
   font-size: 0.28rem;
-  color: #999999;
+  margin-right: 0.3rem;
+  padding-right: 0.3rem;
+  box-sizing: border-box;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
 }
-.ComplaintsASuggestions .header .Complaints .PutAway i.up {
-  width: 0.24rem;
-  height: 0.15rem;
-  display: inline-block;
-  margin-left: 0.2rem;
-  background: url(../img/ps5/up.png) no-repeat 100%;
-  background-size: 100%;
+.ComplaintsASuggestions .header .Complaints .ComplaintsList li .content .contentSel option {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  height: 0.4rem;
+  width: 5rem;
+  font-size: 0.28rem;
+  line-height: 0.4rem;
 }
-.ComplaintsASuggestions .header .Complaints .PutAway i.down {
-  width: 0.24rem;
-  height: 0.15rem;
-  margin-left: 0.2rem;
-  display: inline-block;
-  background: url(../img/ps5/dropdown.png) no-repeat 100%;
-  background-size: 100%;
+.ComplaintsASuggestions .header .Complaints .ComplaintsList li .content .contentSel1 {
+  background: url(../img/ps5/rightIcon.png) no-repeat right center;
+  background-size: 0.15rem 0.24rem;
+  float: right;
+  width: 5rem;
+  height: 0.6rem;
+  margin-top: 0.15rem;
+  text-align: right;
+  color: #333;
+  font-size: 0.28rem;
+  margin-right: 0.3rem;
+  padding-right: 0.3rem;
+  box-sizing: border-box;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+}
+.ComplaintsASuggestions .header .Complaints .ComplaintsList li .content .contentSel1 option {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  height: 0.4rem;
+  width: 5rem;
+  font-size: 0.28rem;
+  line-height: 0.4rem;
 }
 .formBanner {
   display: none;
